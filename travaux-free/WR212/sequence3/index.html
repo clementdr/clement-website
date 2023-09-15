@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="style/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <li><a href="#accueil">BOB DOE</a></li>
+        <ul>
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#galerie">Galerie</a></li>
+          <li><a href="#competences">Compétences</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="accueil">
+      <article class="art1">
+        <h1>Accueil</h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste animi
+          dignissimos ad illo possimus unde. Qui maiores accusantium quos.
+          Eligendi, voluptates pariatur. Amet, pariatur iusto perferendis
+          dignissimos ipsa esse aliquid, consectetur libero atque, deserunt quia
+          consequatur veniam culpa saepe officiis officia labore odit! Eaque ex,
+          animi soluta mollitia, et dolorem esse consequuntur modi eligendi non
+          quas molestiae. Iure deserunt, laborum ea aliquam perspiciatis itaque
+          harum perferendis, qui cupiditate unde, optio illo veniam error!
+          Laboriosam culpa fugit nemo! Ut esse sequi delectus reprehenderit quae
+          quidem enim quod vitae quia maiores eveniet totam consequatur,
+          quisquam sed in nihil ipsam quis dicta ullam?
+        </p>
+      </article>
+    </section>
+    <section id="galerie">
+      <article class="art2">
+        <h1>Galerie</h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste animi
+          dignissimos ad illo possimus unde. Qui maiores accusantium quos.
+          Eligendi, voluptates pariatur. Amet, pariatur iusto perferendis
+          dignissimos ipsa esse aliquid, consectetur libero atque, deserunt quia
+          consequatur veniam culpa saepe officiis officia labore odit! Eaque ex,
+          animi soluta mollitia, et dolorem esse consequuntur modi eligendi non
+          quas molestiae. Iure deserunt, laborum ea aliquam perspiciatis itaque
+          harum perferendis, qui cupiditate unde, optio illo veniam error!
+          Laboriosam culpa fugit nemo! Ut esse sequi delectus reprehenderit quae
+          quidem enim quod vitae quia maiores eveniet totam consequatur,
+          quisquam sed in nihil ipsam quis dicta ullam?
+        </p>
+      </article>
+    </section>
+    <section id="competences">
+      <article class="art1">
+        <h1>Compétences</h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste animi
+          dignissimos ad illo possimus unde. Qui maiores accusantium quos.
+          Eligendi, voluptates pariatur. Amet, pariatur iusto perferendis
+          dignissimos ipsa esse aliquid, consectetur libero atque, deserunt quia
+          consequatur veniam culpa saepe officiis officia labore odit! Eaque ex,
+          animi soluta mollitia, et dolorem esse consequuntur modi eligendi non
+          quas molestiae. Iure deserunt, laborum ea aliquam perspiciatis itaque
+          harum perferendis, qui cupiditate unde, optio illo veniam error!
+          Laboriosam culpa fugit nemo! Ut esse sequi delectus reprehenderit quae
+          quidem enim quod vitae quia maiores eveniet totam consequatur,
+          quisquam sed in nihil ipsam quis dicta ullam?
+        </p>
+      </article>
+    </section>
+    <section id="contact">
+      <article class="art2">
+        <h1>Contact</h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste animi
+          dignissimos ad illo possimus unde. Qui maiores accusantium quos.
+          Eligendi, voluptates pariatur. Amet, pariatur iusto perferendis
+          dignissimos ipsa esse aliquid, consectetur libero atque, deserunt quia
+          consequatur veniam culpa saepe officiis officia labore odit! Eaque ex,
+          animi soluta mollitia, et dolorem esse consequuntur modi eligendi non
+          quas molestiae. Iure deserunt, laborum ea aliquam perspiciatis itaque
+          harum perferendis, qui cupiditate unde, optio illo veniam error!
+          Laboriosam culpa fugit nemo! Ut esse sequi delectus reprehenderit quae
+          quidem enim quod vitae quia maiores eveniet totam consequatur,
+          quisquam sed in nihil ipsam quis dicta ullam?
+        </p>
+      </article>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="js/jquery.scrollTo.min.js"></script>
+    <script src="js/jquery.localScroll.min.js"></script>
+    <script src="js/jquery.parallax-1.1.3.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        console.log("ok...");
+
+        $.localScroll();
+        $("#accueil").parallax("50%", 0.3);
+        $("#galerie").parallax("50%", 0.3);
+        $("#competences").parallax("50%", 0.3);
+        $("#contact").parallax("50%", 0.3);
+      });
+    </script>
+  </body>
+</html>

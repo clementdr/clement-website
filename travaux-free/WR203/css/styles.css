@@ -1,0 +1,277 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  text-align: center;
+}
+main {
+  display: grid;
+  justify-content: center;
+}
+
+#formulaire {
+  display: flex;
+  width: 1100px;
+  align-items: flex-start;
+}
+#formulaire_left {
+  display: grid;
+  grid-template-columns: repeat(2, 250px);
+  grid-template-rows: repeat(5, 30px);
+  grid-gap: 10px;
+
+  padding: 20px 20px 35px;
+  border-radius: 15px;
+  background-color: lightgray;
+}
+
+#formulaire_right {
+  display: grid;
+  grid-template-columns: repeat(2, 250px);
+  grid-template-rows: repeat(5, 30px);
+  grid-gap: 10px;
+  padding: 20px 20px 35px;
+  border-radius: 15px;
+  background-color: lightgray;
+}
+
+#formulaire_between {
+  display: grid;
+}
+
+#formulaire_between img {
+  width: 30px;
+  height: auto;
+  padding-top: 40px;
+}
+
+.passenger_type,
+.passenger_type1,
+.meal_type,
+.meal_type1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.passenger_type p,
+.passenger_type1 p,
+.meal_type p,
+.meal_type1 p {
+  margin: 0;
+}
+
+#passenger_button,
+#meal_button,
+#meal_button2,
+#meal_button3 {
+  border: 0;
+  background-color: white;
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 15px;
+  color: rgb(170, 170, 170);
+}
+
+.passenger_type,
+.meal_type {
+  background-color: white;
+  padding: 5px 0;
+}
+
+.passenger_type1,
+.meal_type1 {
+  background-color: rgb(228, 228, 228);
+  padding: 5px 0;
+}
+
+#meal_validation {
+  display: flex;
+}
+
+#meal_no {
+  padding-left: 20px;
+}
+
+#confirm {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 100px;
+}
+
+input {
+  font-size: 15px;
+  border: 0;
+  border-radius: 5px;
+}
+
+.champ {
+  height: 30px;
+  padding-left: 35px;
+}
+
+label {
+  color: rgb(97, 97, 97);
+  font-size: 13px;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#destination {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  display: grid;
+  align-items: end;
+}
+
+#champ1 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  background-image: url(../img/takeoff.png);
+  background-size: 30px;
+  background-repeat: no-repeat;
+}
+#champ2 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  background-image: url(../img/landing.png);
+  background-size: 30px;
+  background-repeat: no-repeat;
+}
+#dates {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  display: grid;
+  align-items: end;
+}
+#champ3 {
+  grid-column: 1/2;
+  grid-row: 4/5;
+  background-image: url(../img/calendar.png);
+  background-size: 27px;
+  background-repeat: no-repeat;
+  background-position-x: 3px;
+  background-position-y: 2px;
+}
+#champ4 {
+  grid-column: 2/3;
+  grid-row: 4/5;
+  background-image: url(../img/calendar.png);
+  background-size: 27px;
+  background-repeat: no-repeat;
+  background-position-x: 3px;
+  background-position-y: 2px;
+}
+
+#passengers {
+  grid-column: 1/2;
+  grid-row: 5/6;
+  display: grid;
+  align-items: end;
+}
+
+#passenger_button {
+  grid-column: 1/2;
+  grid-row: 6/7;
+  background-image: url(../img/passengers.png);
+  background-size: 27px;
+  background-repeat: no-repeat;
+  background-position-x: 3px;
+  background-position-y: 2px;
+}
+
+#passenger_type {
+  grid-column: 1/2;
+  grid-row: 6/7;
+  display: none;
+  padding-top: 25px;
+}
+
+#meal {
+  grid-column: 2/3;
+  grid-row: 5/6;
+  display: grid;
+  align-items: end;
+}
+#meal_validation {
+  grid-column: 2/3;
+  grid-row: 6/7;
+}
+
+#confirm {
+  grid-column: 1/3;
+  grid-row: 7/8;
+  height: 40px;
+  margin-top: 20px;
+}
+
+#meal_title {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  display: grid;
+  align-items: end;
+}
+
+#meal_button {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  background-image: url(../img/food.png);
+  background-size: 27px;
+  background-repeat: no-repeat;
+  background-position-x: 3px;
+  background-position-y: 2px;
+}
+
+#meal_type {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  padding-top: 30px;
+  display: none;
+}
+
+#meal_button2 {
+  grid-column: 1/2;
+  grid-row: 4/5;
+  background-image: url(../img/food.png);
+  background-size: 27px;
+  background-repeat: no-repeat;
+  background-position-x: 3px;
+  background-position-y: 2px;
+}
+
+#meal_type2 {
+  grid-column: 1/2;
+  grid-row: 4/5;
+  padding-top: 30px;
+  display: none;
+}
+
+#meal_button3 {
+  grid-column: 1/2;
+  grid-row: 6/7;
+  background-image: url(../img/food.png);
+  background-size: 27px;
+  background-repeat: no-repeat;
+  background-position-x: 3px;
+  background-position-y: 2px;
+}
+
+#meal_type3 {
+  grid-column: 1/2;
+  grid-row: 6/7;
+  padding-top: 30px;
+  display: none;
+}
+
+#reservation_meals {
+  grid-column: 2/3;
+  grid-row: 2/4;
+  width: 250px;
+  margin: 0 auto;
+  filter: saturate(0%);
+}

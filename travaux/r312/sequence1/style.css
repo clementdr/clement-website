@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap");
+body {
+  background-image: url(images/backgorund.jpg);
+  background-attachment: fixed;
+  background-size: contain;
+
+  font-family: "Open Sans", sans-serif;
+}
+
+#toy-story-logo {
+  width: 100px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  transform: rotate(-10deg);
+  transition: all 0.2s ease-in-out;
+}
+
+#toy-story-logo:hover {
+  transform: rotate(10deg);
+}
+
+#cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 80px 150px;
+}
+
+.toy-card {
+  width: 300px;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  margin-bottom: 70px;
+  position: relative;
+}
+
+.toy-card__image {
+  position: relative;
+  height: 250px;
+
+  background: linear-gradient(
+    146deg,
+    rgba(255, 246, 188, 1) 0%,
+    rgba(121, 72, 9, 1) 100%
+  );
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+.toy-card__image img {
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transform: translateX(50%);
+  height: 230px;
+  transition: all 0.2s ease-in-out;
+}
+
+.toy-card__name {
+  background-color: orange;
+  width: 100%;
+  padding: 3px 0;
+  text-align: center;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.toy-card__description {
+  background-color: #f5f5f5;
+  color: rgb(146, 146, 146);
+  text-align: center;
+  font-size: 13px;
+  padding: 10px 0px;
+  border-radius: 0 0 20px 20px;
+  width: 100%;
+}
+
+.toy-card__unit-stats {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  width: 100%;
+  border-radius: 0 0 20px 20px;
+  text-align: center;
+  background-color: orange;
+  color: #f5f5f5;
+  transition: all 0.2s ease-in-out;
+  height: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.one-third,
+.two-third,
+.third-third {
+  padding: 10px 0;
+}
+
+.toy-card__unit-stats .stat {
+  font-weight: 600;
+}
+
+.toy-card__unit-stats .stat-value {
+  font-weight: 200;
+  font-size: 12px;
+}
+
+.toy-card:hover > .toy-card__unit-stats {
+  visibility: visible;
+  opacity: 1;
+  height: auto;
+  z-index: 2;
+}
+
+.toy-card:hover > .toy-card__description {
+  border-radius: 0;
+}
+
+.toy-card:hover > .toy-card__image img {
+  height: 270px;
+}
+
+.toy-card:hover {
+  box-shadow: 1px 1px 5px rgba(79, 79, 79, 0.66);
+}
+
+@media (min-width: 320px) and (max-width: 500px) {
+  #cardContainer {
+    margin: 130px 50px;
+  }
+}

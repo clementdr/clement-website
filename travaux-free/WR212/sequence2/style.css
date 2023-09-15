@@ -1,0 +1,429 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
+/*------------------------------------*\
+    $Base / Version mobile
+\*------------------------------------*/
+@media (max-width: 480px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    background-color: black;
+  }
+
+  header {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  header h1 {
+    margin: 0;
+    font-family: "Permanent Marker", cursive;
+    font-size: 20px;
+  }
+  header a {
+    margin: 0;
+    color: white;
+    text-decoration: none;
+  }
+
+  #navigation-principale {
+    display: grid;
+    padding: 10px;
+  }
+
+  #navigation-principale a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease-in;
+  }
+
+  #navigation-principale a:hover {
+    color: #006eff;
+  }
+
+  aside,
+  #produits,
+  article {
+    background-color: white;
+    padding: 0 10px;
+  }
+
+  article a {
+    text-decoration: none;
+  }
+
+  .tri-collection {
+    display: grid;
+  }
+
+  #produits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 0;
+  }
+
+  .article-image {
+    margin: 0;
+    width: 50%;
+    padding: 10px;
+  }
+
+  h5,
+  h6 {
+    color: black;
+    text-align: center;
+    margin: 0;
+  }
+
+  .tri-collection label {
+    text-transform: uppercase;
+    color: #666;
+    margin: 5px 0;
+    font-size: 12px;
+  }
+
+  .tri-collection select {
+    width: 150px;
+  }
+
+  .article-image img {
+    max-width: 150px; /* Afin d'éviter les débordement des images */
+  }
+
+  footer {
+    color: white;
+    padding: 10px;
+  }
+
+  footer h3 {
+    margin: 5px;
+  }
+  footer p {
+    margin: 0 5px;
+    color: #aaa;
+  }
+  footer a {
+    text-decoration: none;
+    color: #aaa;
+    margin: 0 5px;
+    transition: 0.3s all;
+  }
+
+  footer a:hover {
+    color: white;
+  }
+
+  footer li {
+    list-style-type: none;
+  }
+  footer ul {
+    padding: 0;
+  }
+  section {
+    display: block;
+    align-content: space-between;
+  }
+}
+
+/*------------------------------------*\
+    $Version Tablette
+\*------------------------------------*/
+@media (min-width: 480px) and (max-width: 960px) {
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    background-color: black;
+    width: 100%;
+    display: grid;
+  }
+
+  #conteneur {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  header {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    grid-column: 1 / 4;
+  }
+
+  header h1 {
+    margin: 0;
+    font-family: "Permanent Marker", cursive;
+    font-size: 23px;
+  }
+
+  header a {
+    margin: 0;
+    color: white;
+    text-decoration: none;
+  }
+
+  #navigation-principale {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    grid-column: 1 / 4;
+  }
+
+  #navigation-principale a {
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    transition: all 0.3s ease-in;
+  }
+
+  #navigation-principale a:hover {
+    color: #006eff;
+  }
+
+  aside {
+    grid-column: 1 / 2;
+  }
+  .tri-collection {
+    display: grid;
+    margin: 15px;
+  }
+
+  aside label {
+    margin: 10px 0;
+    text-transform: uppercase;
+    color: #666;
+  }
+
+  #produits {
+    grid-column: 2 / 4;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  article {
+    text-align: center;
+    width: 50%;
+    margin: 30px 0;
+  }
+  .article-image {
+    margin: 5px;
+  }
+  img {
+    width: 70%;
+  }
+  article a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+  }
+
+  article h5,
+  article h6 {
+    margin: 0;
+    font-weight: 200;
+  }
+
+  aside,
+  #produits {
+    background-color: white;
+  }
+
+  footer {
+    grid-column: 1 / 4;
+    color: white;
+  }
+  #footer-inner {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+  }
+
+  footer h3 {
+    margin: 5px;
+  }
+  footer p {
+    color: #aaa;
+    margin: 0 5px;
+  }
+  footer a {
+    text-decoration: none;
+    color: #aaa;
+    margin: 0 5px;
+    transition: 0.3s all;
+  }
+
+  footer a:hover {
+    color: white;
+  }
+  footer li {
+    list-style-type: none;
+  }
+  footer ul {
+    padding: 0;
+  }
+  section {
+    display: block;
+    align-content: space-between;
+  }
+  .credit {
+    margin: 15px;
+  }
+}
+
+/*------------------------------------*\
+    $Version Desktop
+\*------------------------------------*/
+@media (min-width: 960px) {
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    background-color: black;
+    width: 100%;
+    display: grid;
+  }
+
+  #conteneur {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  header {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    grid-column: 1 / 5;
+  }
+
+  header h1 {
+    margin: 0;
+    font-family: "Permanent Marker", cursive;
+    font-size: 23px;
+  }
+
+  header a {
+    margin: 0;
+    color: white;
+    text-decoration: none;
+  }
+
+  #navigation-principale {
+    display: flex;
+    flex-direction: column;
+
+    padding: 10px;
+    grid-column: 1 / 2;
+  }
+
+  #navigation-principale a {
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    transition: all 0.3s ease-in;
+  }
+
+  #navigation-principale a:hover {
+    color: #006eff;
+  }
+
+  aside {
+    grid-column: 4/5;
+  }
+  .tri-collection {
+    display: grid;
+    margin: 15px;
+  }
+
+  aside label {
+    margin: 10px 0;
+    text-transform: uppercase;
+    color: #666;
+  }
+
+  #produits {
+    grid-column: 2 / 4;
+    grid-row: 2;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 15px;
+  }
+  article {
+    text-align: center;
+    width: 33%;
+    margin: 30px 0;
+  }
+  .article-image {
+    margin: 5px;
+  }
+  img {
+    width: 60%;
+  }
+  article a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+  }
+
+  article h5,
+  article h6 {
+    margin: 0;
+    font-weight: 200;
+  }
+
+  aside,
+  #produits {
+    background-color: white;
+  }
+
+  footer {
+    grid-column: 1 / 4;
+    color: white;
+  }
+  #footer-inner {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+  }
+
+  footer h3 {
+    margin: 5px;
+  }
+  footer p {
+    color: #aaa;
+    margin: 0 5px;
+  }
+  footer a {
+    text-decoration: none;
+    color: #aaa;
+    margin: 0 5px;
+    transition: 0.3s all;
+  }
+
+  footer a:hover {
+    color: white;
+  }
+  footer li {
+    list-style-type: none;
+  }
+  footer ul {
+    padding: 0;
+  }
+  section {
+    display: block;
+    align-content: space-between;
+  }
+  .credit {
+    margin: 15px;
+  }
+}

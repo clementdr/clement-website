@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reserve your flight</title>
+  </head>
+  <body>
+    <main>
+      <h1>RESERVE YOUR FLIGHT</h1>
+      <div id="formulaire">
+        <div id="formulaire_left">
+          <label for="desination" id="destination">Destination</label>
+
+          <input
+            id="champ1"
+            class="champ"
+            type="text"
+            name="departing"
+            placeholder="Departing from"
+          />
+
+          <input
+            id="champ2"
+            class="champ"
+            type="text"
+            name="arriving"
+            placeholder="Arriving at"
+          />
+
+          <label for="dates" id="dates">Dates</label>
+
+          <input
+            id="champ3"
+            class="champ"
+            type="date"
+            name="departure"
+            placeholder="Departure"
+          />
+
+          <input
+            id="champ4"
+            class="champ"
+            type="date"
+            name="return"
+            placeholder="Return"
+          />
+
+          <label for="passengers" id="passengers">Passengers</label>
+
+          <button
+            type="button"
+            id="passenger_button"
+            onclick="changeDisplay('passenger_type')"
+          >
+            Number of passenger
+          </button>
+          <div id="passenger_type">
+            <div class="passenger_type">
+              <p>Adult (25 years and older)</p>
+              <input type="number" min="0" max="10" />
+            </div>
+            <div class="passenger_type1">
+              <p>Young (12 - 24 years)</p>
+              <input type="number" min="0" max="10" />
+            </div>
+            <div class="passenger_type">
+              <p>Child (2 - 11 years)</p>
+              <input type="number" min="0" max="10" />
+            </div>
+            <div class="passenger_type1">
+              <p>Infant (0 - 23 months)</p>
+              <input type="number" min="0" max="10" />
+            </div>
+          </div>
+
+          <label for="meal" id="meal"
+            >Do you want us to prepare a meal for you ?</label
+          >
+
+          <div id="meal_validation">
+            <div>
+              <input type="radio" id="yes" name="yes" value="yes" />
+              <label for="yes">Yes</label>
+            </div>
+
+            <div id="meal_no">
+              <input type="radio" id="no" name="no" value="no" />
+              <label for="no">No</label>
+            </div>
+          </div>
+
+          <input type="submit" value="Confirm you reservation" id="confirm" />
+        </div>
+
+        <!-- between form-->
+        <div id="formulaire_between">
+          <img src="img/arrow.png" alt="fleche" />
+        </div>
+
+        <!-- form right-->
+
+        <div id="formulaire_right">
+          <label for="meal" id="meal_title">Meal</label>
+
+          <!-- meal 1-->
+          <button
+            type="button"
+            id="meal_button"
+            onclick="changeDisplay('meal_type')"
+          >
+            Meal 1
+          </button>
+          <div id="meal_type">
+            <div class="meal_type">
+              <p>Breakfast</p>
+              <input type="number" min="0" max="10" />
+            </div>
+            <div class="meal_type1">
+              <p>Lunch</p>
+              <input type="number" min="0" max="10" />
+            </div>
+            <div class="meal_type">
+              <p>Dinner</p>
+              <input type="number" min="0" max="10" />
+            </div>
+            <div class="meal_type1">
+              <p>Snack</p>
+              <input type="number" min="0" max="10" />
+            </div>
+            <div class="meal_type">
+              <p>Refreshment</p>
+              <input type="number" min="0" max="10" />
+            </div>
+            <div class="meal_type1">
+              <p>Coktail</p>
+              <input type="number" min="0" max="10" />
+            </div>
+          </div>
+
+          <!-- meal 2-->
+          <button
+            type="button"
+            id="meal_button2"
+            onclick="changeDisplay('meal_type2')"
+          >
+            Meal 2
+          </button>
+          <div id="meal_type2">
+            <div class="meal_type">
+              <p>Breakfast</p>
+              <input type="number" min="0" max="10" />
+            </div>
+            <div class="meal_type1">
+              <p>Lunch</p>
+              <input type="number" min="0" max="10" />
+            </div>
+            <div class="meal_type">
+              <p>Dinner</p>
+              <input type="number" min="0" max="10" />
+            </div>
+            <div class="meal_type1">
+              <p>Snack</p>
+              <input type="number" min="0" max="10" />
+            </div>
+            <div class="meal_type">
+              <p>Refreshment</p>
+              <input type="number" min="0" max="10" />
+            </div>
+            <div class="meal_type1">
+              <p>Coktail</p>
+              <input type="number" min="0" max="10" />
+            </div>
+          </div>
+
+          <!-- meal 2-->
+          <button
+            type="button"
+            id="meal_button3"
+            onclick="changeDisplay('meal_type3')"
+          >
+            Meal 3
+          </button>
+          <div id="meal_type3">
+            <div class="meal_type">
+              <p>Breakfast</p>
+              <input type="number" min="0" max="10" />
+            </div>
+            <div class="meal_type1">
+              <p>Lunch</p>
+              <input type="number" min="0" max="10" />
+            </div>
+            <div class="meal_type">
+              <p>Dinner</p>
+              <input type="number" min="0" max="10" />
+            </div>
+            <div class="meal_type1">
+              <p>Snack</p>
+              <input type="number" min="0" max="10" />
+            </div>
+            <div class="meal_type">
+              <p>Refreshment</p>
+              <input type="number" min="0" max="10" />
+            </div>
+            <div class="meal_type1">
+              <p>Coktail</p>
+              <input type="number" min="0" max="10" />
+            </div>
+          </div>
+
+          <img
+            src="img/reservation_meals.jpg"
+            alt="reservation_meals"
+            id="reservation_meals"
+          />
+        </div>
+      </div>
+    </main>
+
+    <script>
+      function changeDisplay(lacible) {
+        element = document.getElementById(lacible);
+        console.info(element);
+        if (element.style.display === "none") {
+          element.style.display = "block";
+        } else {
+          element.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
