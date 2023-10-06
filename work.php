@@ -192,7 +192,7 @@
             </a>
             <a href="travaux/r312/sequence1/index.html" class="work-content hover-red WR312" target="_blank">
                 <div>
-                    <h3>Toy Card</h3>
+                    <h3>Toy Story Game</h3>
                     <p>Intégration Web et Développement front</p>
                 </div>
             </a>

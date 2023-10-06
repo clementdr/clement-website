@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <title>Clément De Roberti</title>
+  </head>
+  <body>
+    <main>
+      <div id="hero">
+        <div class="marquee appa">
+          <h4>Audiovisuel - Communication - Digital - &nbsp;</h4>
+        </div>
+
+        <div id="hero-me">
+          <h1 class="appa">CLEMENT DE ROBERTI</h1>
+          <h5 class="appa">Communication digitale</h5>
+        </div>
+
+        <div class="marquee appa reverse-marquee">
+          <h4>Audiovisuel - Communication - Digital - &nbsp;</h4>
+        </div>
+      </div>
+
+      <div id="description">
+        <h4>about me</h4>
+        <hr />
+        <div id="description-info">
+          <img src="img/IMG_1242.jpeg" alt="clement" />
+          <p>
+            Natif de Chambéry je suis étudiant en BUT Métiers du Multimédia et
+            de l'Internet à l'IUT de Troyes. Depuis plusieurs années maintenant,
+            je me forme aux métiers de la communication digitale. Vous retrouvez
+            sur cette page toutes mes activités artistiques.
+          </p>
+        </div>
+      </div>
+
+      <div class="projets gogo">
+        <h4>Projets</h4>
+        <hr />
+
+        <div id="wrap">
+          <div class="projet-minibox gogo">
+            <img src="img/logo-wn.jpg" alt="wondersnook" />
+            <div class="projet-info">
+              <h6>Community management</h6>
+              <a target="_blank" href="https://www.instagram.com/wonders.nook/"
+                >Voir
+              </a>
+            </div>
+            <p>
+              Wonders Nook est un profil instagram sur lequel sont publiés 2 à 3
+              fois par semaine des publications (photos et vidéos) sur des
+              villes du monde.
+            </p>
+          </div>
+          <div class="projet-minibox gogo">
+            <img src="img/blackmagic.jpg" alt="blackmagic" />
+            <div class="projet-info">
+              <h6>YouTube</h6>
+              <a
+                target="_blank"
+                href="https://youtube.com/@cleementdr?si=Ala07IStgfr55M0r"
+                >Voir
+              </a>
+            </div>
+            <p>
+              Partage de contenus audiovisuels tous formats (vlogs, ciné,
+              shorts, scolaire).
+            </p>
+          </div>
+          <div class="projet-minibox gogo">
+            <img src="img/rg.jpeg" alt="roland garros" />
+            <div class="projet-info">
+              <h6>Photographie</h6>
+              <a target="_blank" href="https://www.instagram.com/clement.dr/"
+                >Voir
+              </a>
+            </div>
+            <p>
+              Passionnée de voyage, je garde en souvenir mes aventures sur mon
+              profil instagram personnel où je publie mes plus belles photos.
+            </p>
+          </div>
+          <div class="projet-minibox gogo">
+            <img src="img/sea.jpg" alt="sea" />
+            <div class="projet-info">
+              <h6>Graphisme</h6>
+              <a target="_blank" href="https://www.behance.net/clementdr"
+                >Voir
+              </a>
+            </div>
+            <p>
+              À l'aide d'outils comme Illustrator ou InDesign, je crée toute
+              sorte de logos ou d'illustrations.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <footer class="gogo">
+        <hr />
+        <div id="footer-wrap" class="gogo">
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/clement-deroberti/"
+            >LinkedIn</a
+          ><a href="mailto:cderoberti@gmail.com">Mail</a
+          ><a href="tel:0781488637">Téléphone</a>
+        </div>
+      </footer>
+    </main>
+
+    <script>
+      const appaElements = document.querySelectorAll(".appa");
+
+      window.addEventListener("load", () => {
+        appaElements.forEach((element, index) => {
+          setTimeout(() => {
+            element.classList.add("visible");
+          }, index * 300);
+        });
+      });
+
+      //////
+
+      function Marquee(selector, speed) {
+        const parentSelector = document.querySelector(selector);
+        const clone = parentSelector.innerHTML;
+        parentSelector.innerHTML += clone;
+        const elements = parentSelector.children;
+        let i = 0;
+
+        setInterval(function () {
+          for (const element of elements) {
+            element.style.transform = `translateX(${i}px)`;
+          }
+          i += speed;
+
+          if (i >= elements[0].clientWidth) {
+            i = 0;
+          }
+        }, 16);
+      }
+
+      window.addEventListener("load", () => {
+        Marquee(".marquee", -0.5);
+        Marquee(".reverse-marquee", 0.5);
+      });
+
+      ////
+
+      function showDivOnScroll() {
+        const aboutDiv = document.getElementById("description");
+        const rect = aboutDiv.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+
+        const isDivVisible = rect.top <= windowHeight && rect.bottom >= 0;
+
+        aboutDiv.classList.toggle("clear", isDivVisible);
+      }
+
+      window.addEventListener("scroll", showDivOnScroll);
+
+      const aboutDiv = document.getElementById("description");
+      aboutDiv.classList.remove("clear");
+
+      ////
+
+      window.addEventListener("scroll", function () {
+        var elements = document.querySelectorAll(".gogo");
+        elements.forEach(function (element) {
+          if (isElementInViewport(element)) {
+            element.style.opacity = 1;
+            element.style.transform = "translateY(0)";
+          } else {
+            element.style.opacity = 0;
+            element.style.transform = "translateY(15px)";
+          }
+        });
+      });
+
+      function isElementInViewport(el) {
+        var rect = el.getBoundingClientRect();
+        return rect.top <= window.innerHeight && rect.bottom >= 0;
+      }
+    </script>
+  </body>
+</html>

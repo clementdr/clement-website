@@ -115,7 +115,7 @@
                 </div>
                 <div class="projet-sub">
 
-                    <a href="https://mmi22d04.sae203.ovh" target="_blank">Lien vers le projet </a>
+                    <a href="https://mmi22d04.sae202.ovh" target="_blank">Lien vers le projet </a>
                 </div>
             </div>
         </div>

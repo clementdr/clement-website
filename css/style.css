@@ -52,15 +52,36 @@ body {
   padding-left: 10px;
 }
 
+.hero-ac h5 {
+  margin: 0;
+  padding-left: 10px;
+  margin-top: 5px;
+}
+
+.hero-ac h5 a {
+  color: #393e41;
+  font-family: neue-kabel, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration: none;
+}
+.hero-ac h5 a:hover {
+  -webkit-text-stroke: #393e41 0.5px;
+  color: transparent;
+  transition: all 0.1s ease-in-out;
+}
+
 .hero-ac h1,
-.hero-ac h4 {
+.hero-ac h4,
+.hero-ac h5 {
   opacity: 0;
   transform: translateY(30px);
   transition: opacity 1s ease, transform 1s ease;
 }
 
 .hero-ac h1.active,
-.hero-ac h4.active {
+.hero-ac h4.active,
+.hero-ac h5.active {
   opacity: 1;
   transform: translateY(0);
   border: 0;
@@ -141,7 +162,7 @@ body {
   display: flex;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: start;
 }
 
 #buttons-box button {
@@ -403,6 +424,20 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+
+.main-bo h1 a {
+  color: #393e41;
+  font-family: neue-kabel, Helvetica, sans-serif;
+  font-weight: 800;
+  font-size: 60px;
+  text-decoration: none;
+}
+
+.main-bo h1 a:hover {
+  -webkit-text-stroke: #393e41 1px;
+  color: transparent;
 }
 /* Book */
 
@@ -412,6 +447,7 @@ body {
   body {
     margin: 0 30px;
   }
+
   .about img {
     transform: translateX(130px);
   }
@@ -428,6 +464,7 @@ body {
     width: 220px;
   }
 }
+
 @media (min-width: 1000px) {
   body {
     margin: 0 80px;
@@ -438,6 +475,9 @@ body {
   }
   .hero-ac h4 {
     font-size: 40px;
+  }
+  .hero-ac h5 a {
+    font-size: 30px;
   }
 
   .about {

@@ -14,7 +14,8 @@
     <main class="main-ac">
         <div class="hero-ac">
             <h1><a href="#about-ac">CLEMENT DE ROBERTI</a></h1>
-            <h4>developper front - graphist</h4>
+            <h4>Communication digitale</h4>
+            <h5> <a target="_blank" href="book-page/index.html">Recruteurs, suivez ce lien !</a></h5>
         </div>
 
         <div class="about-ac" id="about-ac">
@@ -41,6 +42,8 @@
         document.addEventListener("DOMContentLoaded", function() {
             const h1 = document.querySelector(".hero-ac h1");
             const h4 = document.querySelector(".hero-ac h4");
+            const h5 = document.querySelector(".hero-ac h5");
+
 
             function addClassWithDelay(element, className, delay) {
                 setTimeout(function() {
@@ -50,6 +53,8 @@
 
             addClassWithDelay(h1, "active", 0);
             addClassWithDelay(h4, "active", 500);
+            addClassWithDelay(h5, "active", 1000);
+
         });
 
         function showDivOnScroll() {
