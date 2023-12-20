@@ -1,0 +1,28 @@
+footer {
+  bottom: 0;
+  position: fixed;
+  left: 40px;
+  right: 40px;
+  z-index: 5;
+}
+
+footer ul {
+  display: flex;
+  padding: 0;
+  width: 100%;
+  justify-content: space-around;
+}
+
+footer ul li {
+  list-style-type: none;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: #393e41;
+  transition: all 0.1s ease-in-out;
+}
+
+footer ul li a:hover {
+  color: #acacac;
+}
