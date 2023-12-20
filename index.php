@@ -15,7 +15,7 @@
         <div class="hero-ac">
             <h1><a href="#about-ac">CLEMENT DE ROBERTI</a></h1>
             <h4>Communication digitale</h4>
-            <h5> <a target="_blank" href="book-page/index.html">Recruteurs, suivez ce lien !</a></h5>
+            <h5> <a target="_blank" href="book-page/index.html">>> Recruteurs, suivez ce lien ! </a></h5>
         </div>
 
         <div class="about-ac" id="about-ac">

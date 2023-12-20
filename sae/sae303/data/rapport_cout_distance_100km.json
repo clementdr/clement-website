@@ -1,0 +1,18 @@
+[
+  {
+    "type de véhicule": "Diesel",
+    "coût d'une recharge pour 100km sur autoroute": "10,04 €"
+  },
+  {
+    "type de véhicule": "Essence",
+    "coût d'une recharge pour 100km sur autoroute": "13,28 €"
+  },
+  {
+    "type de véhicule": "Éthanol",
+    "coût d'une recharge pour 100km sur autoroute": "9,03 €"
+  },
+  {
+    "type de véhicule": "Électrique",
+    "coût d'une recharge pour 100km sur autoroute": "2,47 €"
+  }
+]

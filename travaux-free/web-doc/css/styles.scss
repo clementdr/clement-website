@@ -1,0 +1,212 @@
+@import "scss/global";
+
+.arw-pos {
+  position: relative;
+  .navigation {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    img {
+      width: 35px;
+      transition: all 0.2s ease-in-out;
+    }
+    img:hover {
+      transform: scale(115%);
+    }
+  }
+}
+main {
+  padding: 0 40px;
+
+  .box {
+    min-height: 100vh;
+    @include flexColumnCenter;
+    gap: 20px;
+    .content-flex {
+      img {
+        width: 300px;
+        transition: all 0.2s ease-in-out;
+      }
+      img:hover {
+        transform: scale(110%);
+      }
+    }
+  }
+
+  .hero {
+    gap: 0;
+    h1 {
+      @include styleH1;
+    }
+    h6 {
+      @include styleH6;
+    }
+  }
+
+  .part1 {
+    h5 {
+      @include styleH5;
+
+      font-style: italic;
+    }
+    h6 {
+      @include styleH6;
+      font-weight: 600;
+    }
+  }
+
+  .part2 {
+    p {
+      @include styleP;
+    }
+  }
+  .part3 {
+    h4 {
+      @include styleH4;
+    }
+    .content-flex {
+      @include flexColumn;
+      gap: 20px;
+      p {
+        @include styleP;
+      }
+    }
+  }
+
+  .part4 {
+    h4 {
+      @include styleH4;
+    }
+    p {
+      @include styleP;
+    }
+  }
+
+  .part5 {
+    h4 {
+      @include styleH4;
+    }
+    .content-flex {
+      @include flexColumn;
+      gap: 20px;
+      p {
+        @include styleP;
+      }
+    }
+  }
+
+  .part6 {
+    .content-flex {
+      @include flexColumn;
+      gap: 20px;
+      p {
+        @include styleP;
+      }
+    }
+  }
+
+  .part7 {
+    .content-flex {
+      @include flexColumn;
+      gap: 20px;
+      p {
+        @include styleP;
+      }
+    }
+  }
+  .part8 {
+    h4 {
+      @include styleH4;
+    }
+    .content-flex {
+      @include flexColumn;
+      gap: 20px;
+      p {
+        @include styleP;
+      }
+    }
+  }
+
+  .part9 {
+    p {
+      @include styleP;
+    }
+  }
+
+  .part10 {
+    h4 {
+      @include styleH4;
+    }
+    p {
+      @include styleP;
+    }
+    .content-flex {
+      @include flexColumn;
+      gap: 20px;
+      p {
+        @include styleP;
+      }
+    }
+  }
+
+  .part11 {
+    p {
+      @include styleP;
+    }
+  }
+
+  .part12 {
+    p {
+      @include styleP;
+    }
+    h4 {
+      @include styleH4;
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  main {
+    padding: 0 80px;
+  }
+
+  .content-flex {
+    img {
+      width: 500px !important;
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  main {
+    padding: 0 120px;
+  }
+
+  .content-flex {
+    flex-direction: initial !important;
+    gap: 50px !important;
+  }
+
+  h1 {
+    font-size: 60px !important;
+  }
+
+  h4 {
+    font-size: 30px !important;
+  }
+
+  h5 {
+    font-size: 25px !important;
+  }
+
+  h6 {
+    font-size: 20px !important;
+  }
+
+  p {
+    font-size: 18px !important;
+  }
+}

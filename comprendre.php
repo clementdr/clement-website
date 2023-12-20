@@ -12,7 +12,11 @@
 
 
     <main id="main-ue">
-        <h1 class="comp">COMPRENDRE</h1>
+        <div id="ue-title" class="comp">
+            <a href="portfolio.php"><img src="img/retour.svg" alt="retour"> </a>
+            <h1 class="comp">COMPRENDRE</h1>
+
+        </div>
 
         <div id="description-ue" class="comp">
             <h5> Objectif : </h5>
@@ -36,7 +40,7 @@
                 </div>
                 <div class="projet-sub">
                     <h6>Mon rôle : </h6>
-                    <p>- Analyser le contenu et les Fonctionnalités des 5 sites de musée selectionnés. <br>
+                    <p>- Analyser le contenu et les fonctionnalités des 5 sites de musée selectionnés. <br>
                         - Rendre compte de mes recherches dans un livrable et lors d'une présentation orale. </p>
                 </div>
                 <div class="projet-sub">

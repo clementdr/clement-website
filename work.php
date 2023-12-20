@@ -18,6 +18,8 @@
             <button id="WR212"><span>WR212</span></button>
             <button id="WR213"><span>WR213</span></button>
             <button id="WR312"><span>WR312</span></button>
+            <button id="WR308"><span>WR308</span></button>
+
 
 
 
@@ -194,6 +196,37 @@
                 <div>
                     <h3>Toy Story Game</h3>
                     <p>Intégration Web et Développement front</p>
+                </div>
+            </a>
+            <a href="travaux/r312/sequence2/index.html" class="work-content hover-red WR312" target="_blank">
+                <div>
+                    <h3>Intégration Figma</h3>
+                    <p>Intégration Web et Développement front</p>
+                </div>
+            </a>
+
+            <a href="sae/sae303/index.html" class="work-content hover-green SAE" target="_blank">
+                <div>
+                    <h3>Concevoir des visualisations de données pour le web et une application interactive</h3>
+                    <p>SAE</p>
+                </div>
+            </a>
+            <a href="travaux/r312/sequence3/affiche.php" class="work-content hover-red WR312" target="_blank">
+                <div>
+                    <h3>Chat Jquery</h3>
+                    <p>Intégration Web et Développement front</p>
+                </div>
+            </a>
+            <a href="travaux/r312/sequence4/index.html" class="work-content hover-red WR312" target="_blank">
+                <div>
+                    <h3>Drag and Drop</h3>
+                    <p>Intégration Web et Développement front</p>
+                </div>
+            </a>
+            <a href="travaux-free/web-doc/index.html" class="work-content hover-green WR308" target="_blank">
+                <div>
+                    <h3>Web documentaire</h3>
+                    <p>Écriture multimédia et narration</p>
                 </div>
             </a>
         </div>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"
+      integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Station drag and drop</title>
+  </head>
+  <body>
+    <main>
+      <h1>Station drag and drop</h1>
+      <h3>Consigne : retrouver les skis et les remettre à leur place</h3>
+      <p>Indice : il faut savoir briser la glace</p>
+      <div id="lake-broke">
+        <img
+          src="img-jeu/lake.png"
+          alt="lake"
+          id="monbouton"
+          onclick="toggleImages()"
+        />
+        <img
+          src="img-jeu/skis.png"
+          alt="skis"
+          id="todrag"
+          class="todrag"
+          style="display: none"
+        />
+      </div>
+      <div id="win">
+        <h1>Bien joué !</h1>
+      </div>
+    </main>
+
+    <script>
+      // changer le display des images
+      function toggleImages() {
+        var monbouton = document.getElementById("monbouton");
+        var todrag = document.getElementById("todrag");
+
+        monbouton.style.display = "none";
+        todrag.style.display = "block";
+      }
+
+      // drag
+      $(document).ready(function () {
+        $(".todrag").draggable({
+          stop: function (e, ui) {
+            if (
+              ui.position.top > 370 &&
+              ui.position.top < 400 &&
+              ui.position.left > 430 &&
+              ui.position.left < 460
+            ) {
+              $("#win").css("display", "block");
+            }
+          },
+        });
+      });
+    </script>
+  </body>
+</html>

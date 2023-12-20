@@ -1,0 +1,540 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+body {
+  margin: 0;
+}
+body main {
+  height: 100vh;
+}
+body main header {
+  background-color: #18302b;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+}
+body main header a {
+  color: #dfcaa4;
+  margin: 0;
+  font-size: 28px;
+  text-decoration: none;
+  font-weight: 300;
+}
+body main header nav ul {
+  display: flex;
+}
+body main header nav ul li {
+  list-style-type: none;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+}
+body main header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-family: Quicksand;
+  font-size: 16px;
+}
+body main header nav ul li a:hover {
+  text-decoration: underline;
+}
+body main .hero {
+  height: 688px;
+  background-image: url(../img/eoliennes.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body main .hero .hero-content {
+  padding-top: 91px;
+  padding-left: 150px;
+}
+body main .hero .hero-content h1 {
+  color: white;
+  font-family: "Playfair Display", serif;
+  font-size: 70px;
+  font-weight: 800;
+  margin: 0;
+  margin-bottom: 66px;
+}
+body main .hero .hero-content a {
+  color: black;
+  padding: 12px 30px;
+  font-size: 15px;
+  background-color: white;
+  text-decoration: none;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+body main .hero .hero-content a:hover {
+  background-color: rgb(193, 193, 193);
+}
+body main .scroll-info {
+  display: flex;
+  justify-content: center;
+  margin: 2px 0;
+}
+body main .about {
+  margin: 0 150px;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+body main .about h2 {
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+  margin-bottom: 50px;
+  font-weight: 500;
+  font-size: 46px;
+}
+body main .about .about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+body main .about .about-content .about-content-img {
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 50%;
+  position: relative;
+}
+body main .about .about-content .about-content-img img {
+  border-radius: 50%;
+  width: 500px;
+  transition: all 0.5s ease-in-out;
+}
+body main .about .about-content .about-content-img img .zoomable {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 0.1s ease;
+}
+body main .about .about-content .about-content-img:hover .zoomable {
+  transform: scale(1.1);
+}
+body main .about .about-content .about-content-des h3 {
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+  margin-bottom: 40px;
+  font-weight: 500;
+  font-size: 40px;
+}
+body main .about .about-content .about-content-des p {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  width: 450px;
+}
+body main .industries {
+  background-color: #18302b;
+  padding-bottom: 50px;
+}
+body main .industries h3 {
+  font-family: "Rubik", sans-serif;
+  color: white;
+  font-weight: 500;
+  font-size: 46px;
+  margin: 0;
+  padding: 50px 0;
+  text-align: center;
+}
+body main .industries .industries-content {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 280px;
+}
+body main .industries .industries-content .industries-content-des {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main .industries .industries-content .industries-content-des .icon {
+  height: 100px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 50%;
+  overflow: hidden;
+}
+body main .industries .industries-content .industries-content-des .rotate {
+  transition: transform 0.5s ease-in-out;
+}
+body main .industries .industries-content .industries-content-des .icon:hover .rotate {
+  animation: rotate 1s infinite linear;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+body main .industries .industries-content .industries-content-des p {
+  color: white;
+  font-size: 20px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+}
+body main .video {
+  height: 869px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main .video .video-content {
+  height: 604px;
+  width: 1140px;
+  background-image: url(../img/batiment2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+  position: relative;
+}
+body main .video .video-content .video-content-button {
+  position: absolute;
+  bottom: 44px;
+  left: 44px;
+  display: flex;
+  align-items: center;
+}
+body main .video .video-content .video-content-button .play-back {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  background-color: rgba(210, 210, 210, 0.56);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main .video .video-content .video-content-button p {
+  color: white;
+  font-size: 24px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  padding-left: 16px;
+  margin: 0;
+}
+body main .clients-say {
+  padding: 88px 148px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(24, 48, 43, 0.03);
+}
+body main .clients-say h1 {
+  color: #1e1e1e;
+  text-align: center;
+  font-family: Rubik;
+  font-size: 46px;
+  font-weight: 600;
+  margin-top: 0;
+}
+body main .clients-say p {
+  color: #1e1e1e;
+  text-align: center;
+  font-family: Quicksand;
+  font-size: 14px;
+  width: 650px;
+  font-weight: 400;
+}
+body main .clients-say .clients-info {
+  display: flex;
+  justify-content: space-between;
+}
+body main .clients-say .clients-info .clients {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  height: 380px;
+  margin: 32px 24px 24px 24px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 21px 24px 34px 0px rgba(0, 0, 0, 0.01);
+}
+body main .clients-say .clients-info .clients .cli-img1 {
+  width: 88px;
+  height: 88px;
+  border-radius: 50px;
+}
+body main .clients-say .clients-info .clients h5 {
+  color: #1e1e1e;
+  font-family: Quicksand;
+  font-size: 16px;
+  margin: 15px 0 5px 0;
+  font-weight: 700;
+}
+body main .clients-say .clients-info .clients h6 {
+  opacity: 0.7;
+  color: #1e1e1e;
+  font-family: Quicksand;
+  font-size: 12px;
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+body main .clients-say .clients-info .clients p {
+  width: 286px;
+  margin-bottom: 40px;
+}
+body main .clients-say .clients-info .clients .cli-img2 {
+  width: 63px;
+  height: 20px;
+  flex-shrink: 0;
+  border-radius: 0px;
+}
+body main .blog {
+  height: 720px;
+  padding: 136px 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+body main .blog h1 {
+  color: #1e1e1e;
+  font-family: Rubik;
+  font-size: 46px;
+  font-weight: 600;
+  margin-top: 0;
+}
+body main .blog .blog-gallery {
+  display: flex;
+  justify-content: space-between;
+}
+body main .blog .blog-gallery .gallery-box {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 560px;
+  justify-content: center;
+  gap: 12px;
+}
+body main .blog .blog-gallery .gallery-box img {
+  width: 100%;
+  height: auto;
+}
+body main .blog .blog-gallery .gallery-box h6 {
+  color: #1e1e1e;
+  font-family: Quicksand;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  text-align: start;
+}
+body main .blog .blog-gallery .gallery-box h3 {
+  color: #1e1e1e;
+  font-family: Quicksand;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+}
+body main .blog .blog-gallery .gallery-box p {
+  color: #1e1e1e;
+  font-family: Quicksand;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+}
+body main .blog a {
+  padding: 12px 20px;
+  border-radius: 26px;
+  border: 1px solid #b6b6b6;
+  color: #1e1e1e;
+  font-family: Quicksand;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 auto;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+body main .blog a:hover {
+  background-color: #b6b6b6;
+}
+body main .contact-us {
+  height: 189px;
+  background: rgba(51, 80, 74, 0.08);
+  padding: 0 550px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+body main .contact-us h2 {
+  color: #000;
+  font-family: Quicksand;
+  font-size: 36px;
+  font-weight: 700;
+}
+body main .contact-us a {
+  background: #33504a;
+  padding: 12px 18px;
+  color: #fff;
+  text-align: center;
+  font-family: Quicksand;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+body main .contact-us a:hover {
+  background-color: #598d82;
+}
+body main .form {
+  height: 505px;
+  padding: 136px 150px;
+}
+body main .form h2 {
+  color: #1e1e1e;
+  font-family: Rubik;
+  font-size: 46px;
+  font-weight: 600;
+  letter-spacing: 1.84px;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+body main .form .form-flex {
+  display: flex;
+  justify-content: space-between;
+}
+body main .form .form-flex p {
+  color: #1e1e1e;
+  font-family: Quicksand;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 40px;
+  margin: 0;
+}
+body main .form .form-flex .formulaire {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: end;
+}
+body main .form .form-flex .formulaire input {
+  width: 500px;
+  height: 40px;
+  padding-left: 15px;
+  align-items: flex-start;
+  border: 1px solid #d4d4d4;
+  background: #fff;
+}
+body main .form .form-flex .formulaire textarea {
+  background: #f4f4f4;
+  resize: none;
+  border: 1px solid #d4d4d4;
+  padding-top: 15px;
+  padding-left: 15px;
+  width: 500px;
+}
+body main .form .form-flex .formulaire button {
+  padding: 12px 40px;
+  background: #737373;
+  color: #fff;
+  font-family: Quicksand;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  transition: all 0.2s ease-in-out;
+}
+body main .form .form-flex .formulaire button:hover {
+  background-color: #b6b6b6;
+  cursor: pointer;
+}
+body main footer {
+  background: #18302b;
+  height: 233px;
+  padding: 70px 100px 20px;
+}
+body main footer .footer-flex {
+  display: flex;
+  justify-content: space-between;
+}
+body main footer .footer-flex a {
+  color: #dfcaa4;
+  margin: 0;
+  font-size: 28px;
+  text-decoration: none;
+  font-weight: 300;
+}
+body main footer .footer-flex .navs {
+  display: flex;
+}
+body main footer .footer-flex .navs nav ul {
+  margin: 0;
+}
+body main footer .footer-flex .navs nav ul li {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+}
+body main footer .footer-flex .navs nav ul li a {
+  transition: all 0.2s ease-in-out;
+  color: #fff;
+  font-family: Quicksand;
+  font-size: 14px;
+  font-weight: 400;
+}
+body main footer .footer-flex .navs nav ul li a:hover {
+  text-decoration: underline;
+}
+body main footer .footer-flex .foot-contact {
+  display: flex;
+  flex-direction: column;
+}
+body main footer .footer-flex .foot-contact .foot-cont {
+  padding: 10px 15px;
+  background-color: rgba(211, 211, 211, 0.257);
+  border-radius: 10px;
+}
+body main footer .footer-flex .foot-contact .foot-cont input {
+  height: 25px;
+  background: none;
+  border: none;
+  color: white;
+}
+body main footer .footer-flex .foot-contact .foot-cont ::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.631);
+}
+body main footer .footer-flex .foot-contact .foot-cont ::placeholder {
+  color: rgba(255, 255, 255, 0.631);
+}
+body main footer .footer-flex .foot-contact .foot-cont button {
+  border-radius: 6px;
+  background: #fff;
+  width: 80px;
+  height: 34px;
+  color: #262626;
+  text-align: center;
+  font-family: Quicksand;
+  font-size: 14px;
+  font-weight: 400;
+  border: none;
+  transition: all 0.2s ease-in-out;
+}
+body main footer .footer-flex .foot-contact .foot-cont button:hover {
+  background: rgb(205, 205, 205);
+  cursor: pointer;
+}
+body main footer .footer-flex .foot-contact .res-soc {
+  margin-top: 20px;
+}
+body main footer .footer-flex .foot-contact .res-soc a {
+  margin-right: 15px;
+}
+body main footer p {
+  color: #fff;
+  font-family: Quicksand;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+  margin-top: 20px;
+}/*# sourceMappingURL=styles.css.map */

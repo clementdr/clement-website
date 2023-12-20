@@ -1,0 +1,134 @@
+html {
+  overflow: hidden;
+}
+body {
+  background-color: #f6f6f6;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#content-box {
+  border-radius: 40px;
+  background: #f6f6f6;
+  box-shadow: 10px 10px 20px #d1d1d1, -10px -10px 20px #ffffff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  border: solid 1px #2b5a66;
+}
+
+#messages,
+#old-msg {
+  display: flex;
+  flex-direction: column;
+  margin: 0 5px;
+  gap: 15px;
+  background-color: #f6f6f6;
+}
+
+#top {
+  background-color: #50a8d6;
+  color: #f6f6f6;
+  border-radius: 20px 20px 5px 5px;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 400;
+  margin: 10px 0;
+  font-size: 25px;
+}
+
+.msg-ct {
+  display: flex;
+  gap: 10px;
+}
+
+.msg-ct:nth-child(even) {
+  display: flex;
+  justify-content: start;
+  width: 100%;
+}
+
+.msg-ct:nth-child(odd) {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: end;
+  width: 100%;
+}
+
+.msg-ct:nth-child(even) #aff-msg {
+  background-color: #dbdbdb;
+  color: #2b5a66;
+}
+
+#aff-psd,
+#aff-msg {
+  margin: 0;
+  border-radius: 40px;
+}
+
+#aff-psd {
+  text-transform: uppercase;
+  background-color: #2b5a66;
+  color: #f6f6f6;
+  padding: 10px;
+
+  height: 20px;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#aff-msg {
+  padding: 10px 15px;
+  color: #f6f6f6;
+  background-color: #50a8d6;
+}
+
+form {
+  margin: 0;
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  padding: 10px 5px 10px 15px;
+  border: none;
+  border: solid 0.5px #2b5a66;
+  transition: all 0.2s ease-in-out;
+
+  border-radius: 20px;
+}
+
+input:hover {
+  transform: scale(105%);
+}
+
+#pseudo {
+  width: 100px;
+}
+
+input[type="submit"] {
+  padding: 10px 15px;
+  transition: all 0.2s ease-in-out;
+  background-color: #2b5a66;
+  color: #f6f6f6;
+}
+
+input[type="submit"]:hover {
+  transform: scale(105%);
+  cursor: pointer;
+  background-color: #50a8d6;
+  border: solid 0.5px #50a8d6;
+}

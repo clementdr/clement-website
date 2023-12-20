@@ -12,7 +12,10 @@
 
 
     <main id="main-ue">
-        <h1 class="comp">CONCEVOIR</h1>
+        <div id="ue-title" class="comp">
+            <a href="portfolio.php"><img src="img/retour.svg" alt="retour"> </a>
+            <h1 class="comp">CONCEVOIR</h1>
+        </div>
 
         <div id="description-ue" class="comp">
             <h5> Objectif : </h5>

@@ -12,7 +12,7 @@
 
 
     <main class="main-bo">
-        <h1 class="comp"><a href="book-page/index.html">CLIQUEZ ICI</a></h1>
+        <h1 class="comp"><a href="book-page/index.html" target="_blank">CLIQUEZ ICI</a></h1>
     </main>
 
 

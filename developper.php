@@ -12,7 +12,10 @@
 
 
     <main id="main-ue">
-        <h1 class="comp">DÉVELOPPER</h1>
+        <div id="ue-title" class="comp">
+            <a href="portfolio.php"><img src="img/retour.svg" alt="retour"> </a>
+            <h1 class="comp">DÉVELOPPER</h1>
+        </div>
 
         <div id="description-ue" class="comp">
             <h5> Objectif : </h5>
@@ -119,6 +122,40 @@
                 </div>
             </div>
         </div>
+
+        <div class="ue-content-box comp">
+            <button id="projet4">Site web étudiant : Partager mes travaux, mon portfolio, mon book sur un site web.</button>
+            <hr>
+            <div class="ue-content projet4">
+                <div class="projet-sub">
+                    <h6>Sujet : </h6>
+                    <p>Concevoir un site web pour partager l'ensemble de mes projets, qu'ils soient scolaires ou personnels. </p>
+                </div>
+                <img src="portfolio-img/website-fig.png" alt="website-fig">
+                <img src="portfolio-img/website-vscode.png" alt="website-vscode">
+
+                <div class="projet-sub">
+                    <h6>Mon rôle : </h6>
+                    <p>- Réaliser une maquette grâce à un logiciel dédié : Figma. <br>
+                        - Développer le site web de manière accessible, éco-responsable, responsive. <br>
+                        - Tenir le site web à jour : apporter des correctifs, ajouter du contenu.
+                    </p>
+                </div>
+                <div class="projet-sub">
+                    <h6>Ce que j'apprends : </h6>
+                    <p>- Organiser un projet un autonomie. <br>
+                        - Développer un site web en respectant des normes. <br>
+                        - Utiliser un logiciel de maquettage professionnel : Figma.
+
+                    </p>
+                </div>
+                <div class="projet-sub">
+
+                    <a href="https://clement-deroberti.fr" target="_blank">Lien vers le projet </a>
+                </div>
+            </div>
+        </div>
+
 
 
     </main>

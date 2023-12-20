@@ -1,0 +1,541 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@mixin styleSection {
+  height: 100vh;
+  padding: 0 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@mixin styleSectionContent {
+  height: 100vh;
+  margin: 40px 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@mixin styleTWtoB {
+  height: 300vh;
+  background: rgb(236, 236, 236);
+  background: linear-gradient(
+    180deg,
+    rgba(236, 236, 236, 1) 0%,
+    rgba(236, 236, 236, 1) 5%,
+    rgba(31, 31, 31, 1) 100%
+  );
+}
+
+@mixin styleTBtoW {
+  height: 300vh;
+  background: rgb(236, 236, 236);
+  background: linear-gradient(
+    0deg,
+    rgba(236, 236, 236, 1) 0%,
+    rgba(236, 236, 236, 1) 5%,
+    rgba(31, 31, 31, 1) 100%
+  );
+}
+
+@mixin styleH1 {
+  margin: 0;
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+@mixin styleH2 {
+  margin: 0;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+@mixin styleH3 {
+  margin: 0;
+  font-size: 25px;
+  font-weight: 500;
+}
+@mixin styleH4 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+@mixin styleH5 {
+  margin: 0;
+  margin-bottom: 50px;
+  font-size: 13px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+@mixin styleP {
+  margin: 0;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: justify;
+  width: 550px;
+}
+
+@mixin styleFoot {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+@mixin styleFlecheNav {
+  a {
+    text-decoration: none;
+    img {
+      width: 50px;
+      transition: all 0.2s ease-in-out;
+    }
+    img:hover {
+      transform: scale(115%);
+    }
+  }
+}
+@mixin Foot {
+  .foot {
+    @include styleFoot();
+    .fleche-nav {
+      @include styleFlecheNav();
+    }
+  }
+}
+@mixin styleBoxContenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin boxText {
+  .box-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    h5 {
+      @include styleH5();
+    }
+    p {
+      @include styleP();
+    }
+  }
+}
+
+@mixin styleIllustrationPropos {
+  width: 550px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+@mixin styleIllusBottom {
+  img {
+    width: 400px;
+    transition: all 0.5s ease-in-out;
+    z-index: 5;
+  }
+  img:hover {
+    transform: scale(105%);
+  }
+  table {
+    text-align: center;
+    border: solid 1px;
+    border-collapse: collapse;
+
+    tr {
+      th {
+        width: fit-content;
+        border: solid 1px;
+        padding: 2px;
+      }
+    }
+    tr {
+      td {
+        width: fit-content;
+        border: solid 1px;
+        padding: 5px;
+      }
+    }
+  }
+  .info-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p {
+      margin: 0;
+      font-size: 13px;
+      font-weight: 200;
+    }
+    .button {
+      font-size: 13px;
+      font-weight: 200;
+    }
+    .button:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+@mixin styleGraph {
+  .c3-axis-y,
+  .c3-axis-x {
+    stroke-width: 0.5px;
+    stroke: rgb(236, 236, 236);
+    font-weight: 100;
+    font-family: "Montserrat", sans-serif;
+  }
+  .c3-legend-item text {
+    stroke-width: 0.5px;
+    stroke: rgb(236, 236, 236);
+    font-weight: 100;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .c3-axis line,
+  .c3-axis path {
+    stroke: rgb(236, 236, 236);
+  }
+}
+
+html {
+  //overflow: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  background: rgb(236, 236, 236);
+  color: rgb(31, 31, 31);
+
+  main {
+    header {
+      position: fixed;
+      height: 100vh;
+      right: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      nav {
+        ul {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          height: 550px;
+          li {
+            list-style-type: none;
+            text-align: center;
+
+            a {
+              padding: 15px;
+              color: rgb(31, 31, 31);
+              background-color: rgba(211, 211, 211, 0.485);
+              border-radius: 50px;
+              height: 10px;
+              width: 10px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              transition: all 0.2s ease-in-out;
+              text-decoration: none;
+              transition: all 0.2s ease-in-out;
+              opacity: 25%;
+            }
+            a:hover {
+              transform: scale(115%);
+              background-color: rgba(224, 224, 224, 0.485);
+              opacity: 100%;
+            }
+            a.active {
+              background-color: rgb(31, 31, 31);
+              color: rgb(236, 236, 236);
+              opacity: 100%;
+            }
+          }
+        }
+      }
+    }
+    #SEC1 {
+      @include styleSection();
+      #P1 {
+        @include styleSectionContent();
+        display: block;
+        .content-top {
+          padding-top: 190px;
+          h1 {
+            @include styleH1();
+          }
+          h3 {
+            @include styleH3();
+            margin-top: 18px;
+          }
+        }
+
+        .foot {
+          @include styleFoot();
+          justify-content: space-between;
+          #foot-content {
+            h4 {
+              @include styleH4();
+            }
+            p {
+              @include styleP();
+
+              font-size: 12px;
+            }
+          }
+          .fleche-nav {
+            @include styleFlecheNav();
+          }
+        }
+      }
+    }
+
+    #SEC2 {
+      @include styleSection();
+
+      #P2 {
+        @include styleSectionContent();
+
+        h2 {
+          @include styleH2();
+        }
+
+        @include Foot();
+      }
+    }
+
+    #T1 {
+      @include styleSection();
+      @include styleTWtoB();
+    }
+
+    #SEC3 {
+      @include styleSection();
+      background-color: rgb(31, 31, 31);
+      color: rgb(236, 236, 236);
+      #P3 {
+        @include styleSectionContent();
+        .box-content {
+          @include styleBoxContenu();
+          @include boxText();
+
+          .illustration-propos {
+            @include styleIllustrationPropos();
+            align-items: end;
+            @include styleIllusBottom();
+          }
+        }
+        @include Foot();
+      }
+    }
+
+    #SEC4 {
+      @include styleSection();
+      background-color: rgb(31, 31, 31);
+      color: rgb(236, 236, 236);
+      #P4 {
+        @include styleSectionContent();
+        .box-content {
+          @include styleBoxContenu();
+          @include boxText();
+
+          flex-direction: row-reverse;
+          p {
+            @include styleP();
+          }
+          .illustration-propos {
+            @include styleIllustrationPropos();
+            align-items: start;
+            @include styleIllusBottom();
+          }
+        }
+        @include Foot();
+      }
+    }
+
+    #T2 {
+      @include styleSection();
+      @include styleTBtoW();
+    }
+
+    #SEC5 {
+      @include styleSection();
+
+      #P5 {
+        @include styleSectionContent();
+        .box-content {
+          @include styleBoxContenu();
+          @include boxText();
+
+          p {
+            @include styleP();
+          }
+          .illustration-propos {
+            @include styleIllustrationPropos();
+            align-items: end;
+            @include styleIllusBottom();
+          }
+        }
+        @include Foot();
+      }
+    }
+
+    #SEC6 {
+      @include styleSection();
+
+      #P6 {
+        @include styleSectionContent();
+        .box-content {
+          @include styleBoxContenu();
+          @include boxText();
+
+          flex-direction: row-reverse;
+          p {
+            @include styleP();
+          }
+          .illustration-propos {
+            #graphique {
+              width: 100%;
+            }
+            @include styleIllustrationPropos();
+            align-items: start;
+            @include styleIllusBottom();
+          }
+        }
+        @include Foot();
+      }
+    }
+
+    #SEC7 {
+      @include styleSection();
+
+      #P7 {
+        @include styleSectionContent();
+        .box-content {
+          @include styleBoxContenu();
+          @include boxText();
+
+          p {
+            @include styleP();
+          }
+          .illustration-propos {
+            #graphique {
+              width: 100%;
+            }
+            @include styleIllustrationPropos();
+            align-items: end;
+            @include styleIllusBottom();
+          }
+        }
+        @include Foot();
+      }
+    }
+
+    #T3 {
+      @include styleSection();
+      @include styleTWtoB();
+    }
+
+    #SEC8 {
+      @include styleSection();
+      background-color: rgb(31, 31, 31);
+      color: rgb(236, 236, 236);
+      #P8 {
+        @include styleSectionContent();
+        .box-content {
+          @include styleBoxContenu();
+          @include boxText();
+
+          flex-direction: row-reverse;
+
+          p {
+            @include styleP();
+          }
+          .illustration-propos {
+            #graphique {
+              width: 100%;
+            }
+            @include styleIllustrationPropos();
+            align-items: start;
+            #graph1 {
+              @include styleGraph();
+            }
+            @include styleIllusBottom();
+          }
+        }
+        @include Foot();
+      }
+    }
+
+    #SEC9 {
+      @include styleSection();
+      background-color: rgb(31, 31, 31);
+      color: rgb(236, 236, 236);
+      #P9 {
+        @include styleSectionContent();
+        .box-content {
+          @include styleBoxContenu();
+          @include boxText();
+
+          p {
+            @include styleP();
+          }
+          .illustration-propos {
+            #graphique {
+              width: 100%;
+            }
+            @include styleIllustrationPropos();
+            align-items: end;
+            #graph2 {
+              width: 600px;
+              height: 450px;
+              @include styleGraph();
+            }
+            @include styleIllusBottom();
+          }
+        }
+        @include Foot();
+      }
+    }
+
+    #T4 {
+      @include styleSection();
+      @include styleTBtoW();
+    }
+
+    #SEC10 {
+      @include styleSection();
+
+      #P10 {
+        @include styleSectionContent();
+        .box-content {
+          @include styleBoxContenu();
+          @include boxText();
+
+          flex-direction: row-reverse;
+
+          p {
+            @include styleP();
+          }
+          .illustration-propos {
+            #graphique {
+              width: 100%;
+            }
+            @include styleIllustrationPropos();
+            align-items: start;
+            @include styleIllusBottom();
+          }
+        }
+        @include Foot();
+      }
+    }
+  }
+}

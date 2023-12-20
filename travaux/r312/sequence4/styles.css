@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+main {
+  text-align: center;
+}
+
+#lake-broke {
+  position: relative;
+
+  margin: auto;
+  height: 650px;
+  width: 650px;
+  background-image: url("img-jeu/station-2.jpg");
+  background-size: cover;
+}
+
+h3 {
+  margin: 0;
+}
+
+#win {
+  display: none;
+  position: absolute;
+
+  border-radius: 25px;
+  width: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(205, 188, 104);
+}
+
+#monbouton {
+  display: block;
+  position: absolute;
+  width: 110px;
+  bottom: 100px;
+  right: 233px;
+}
+
+#monbouton:hover {
+  cursor: crosshair;
+}
+
+#todrag {
+  position: absolute;
+  width: 40px;
+  bottom: 135px;
+  right: 265px;
+}
+
+#todrag:hover {
+  cursor: grab;
+}

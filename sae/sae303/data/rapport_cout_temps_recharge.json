@@ -1,0 +1,22 @@
+[
+  {
+    "Niveau": "N1 - Charge lente",
+    "Temps de recharge (moyenne en heures)": "16",
+    "Coût d'une recharche (moyenne en €)": "  1.5 € "
+  },
+  {
+    "Niveau": "N2 - Charge normal",
+    "Temps de recharge (moyenne en heures)": "5.5",
+    "Coût d'une recharche (moyenne en €)": "  10,0 € "
+  },
+  {
+    "Niveau": "N3 - Charge rapide",
+    "Temps de recharge (moyenne en heures)": "1",
+    "Coût d'une recharche (moyenne en €)": "  16.5 € "
+  },
+  {
+    "Niveau": "Haute puissance - Charge ultra-rapide",
+    "Temps de recharge (moyenne en heures)": "0.5",
+    "Coût d'une recharche (moyenne en €)": "  25,0 € "
+  }
+]
